@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Rubik+Moonrocks&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Oleo Script Swash Caps', cursive; */
+  font-family: 'Rubik Moonrocks', cursive;
+}
+header{
+  background-image: url(image/OceanHouse_HeaderImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 25px;
+  color: #20efbf;
+  margin-left: 50px;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.menu li {
+  padding: 10px 30px; 
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  transition: border-bottom 0.3s ease-in-out;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #16f5c1;
+  transition: width 0.3s ease-in-out;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+.menu a:hover::after, .menu a.active{
+  color: #16f5c1;
+}
+.navigation button{
+  font-size: 18px;
+  padding: 15px 50px;
+  margin-right: 50px;
+  border-radius: 70px 0;
+  background-color: #16f5c1;
+  border: 5px solid #16f5c1;
+  color: white;
+  transition: 0.3s;
+}
+.navigation button:hover{
+  background-color: rgba(0, 0, 0, 0.003);
+  color: #16f5c1;
+  border: 5px solid #16f5c1;
+}
+
+/* first section code start  */
+
+.first-section{
+  width: 1300px;
+  margin: 100px auto;
+}
+.first-section h2{
+  text-align: center;
+  font-size: 45px;
+  font-weight: 300;
+  color: #16f5c1;
+  margin-bottom: 20px;
+}
+.first-section p{
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.first-section-flex{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 35px;
+}
+.first-section-parent{
+  background-color: #16f5c113;
+  padding: 20px;
+  border-radius: 5px;
+}
+.first-section-text{
+  text-align: center;
+  background-color: white;
+  height: 230px;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px dotted #16f5c1;
+  transition: 0.3s;
+}
+.first-section-text i{
+  font-size: 50px;
+  color: #16f5c1;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px dotted #16f5c1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.first-section-text h4{
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+.first-section-text h5{
+  font-size: 18px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: #0bbc93;
+}
+.first-section-text:hover{
+  background-color: #00B98E;
+  color: white;
+}
+.first-section-text:hover h5{
+  color: white;
+}
+
+/* second section code start  */
+
+.second-section{
+  width: 1200px;
+  margin: 100px auto;
+}
+.second-section-container{
+  display: flex;
+  gap: 30px;
+}
+.second-section-div{
+  padding: 50px 0 50px 50px;
+  background-color: #00b98ee0;
+}
+.second-section-img{
+  width: 480px;
+}
+.second-section-img img{
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+.second-section-text{
+  margin-top: 30px;
+}
+.second-section-text h2{
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(2, 2, 84);
+  margin-bottom: 30px;
+}
+.second-section-text p{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.second-section-text h5{
+  font-size: 20px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.second-section-text h5 i{
+  font-size: 20px;
+  font-weight: bold;
+  color: #06f7bb;
+}
+.second-section-text button{
+  margin-top: 50px;
+  padding: 16px 35px;
+  margin-left: 30px;
+  background-color: #00B98E;
+  border: 2px solid #00B98E;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 40px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.second-section-text button:hover{
+  background-color: white;
+  color: #00B98E;
+}
+
+/* third section code start  */
+
+.third-section{
+  width: 1200px;
+  margin: 0 auto 100px auto;
+}
+.third-section-title{
+  display: flex;
+  justify-content: space-between;
+}
+.third-sec-title-text{
+  width: 600px;
+}
+.third-sec-title-text h3{
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.third-sec-title-text p{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.third-sec-btn{
+  margin-top: 80px;
+}
+.third-sec-btn button{
+  padding: 10px 28px;
+  font-size: 17px;
+  font-weight: 300;
+  margin-right: 5px;
+  border-radius: 40px 0;
+  background-color: white;
+  border: 2px solid #00B98E;
+  transition: 0.3s;
+}
+.third-sec-btn button:hover, .third-sec-btn button.active{
+  background-color: #00B98E;
+  color: white;
+}
+.third-sec-flex{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.third-sec-img h3{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 25px;
+  font-weight: 300;
+  padding-bottom: 70px;
+}
+.third-sec-img{
+  width: 360px;
+}
+.third-sec-img img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.third-section .btn{
+  font-size: 17px;
+  font-weight: 300;
+  padding: 20px 40px;
+  background-color: #00B98E;
+  border: 2px solid #00B98E;
+  color: white;
+  border-radius: 60px 0;
+  margin-left: 450px;
+  transition: 0.3s;
+}
+.third-section .btn:hover{
+  background-color: white;
+  color: #00B98E;
+}
+
+/* fourth section code start  */
+
+.fourth-section{
+  width: 1200px;
+  margin: auto;
+  background-color: #00b98e2f;
+  padding: 30px;
+}
+.fourth-section-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: white;
+  padding: 20px;
+}
+.fourth-sec-img{
+  width: 680px;
+}
+.fourth-sec-img img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.fourth-sec-text{
+  margin-top: 30px;
+}
+.fourth-sec-text h2{
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(6, 6, 93);
+  margin-bottom: 20px;
+}
+.fourth-sec-text p{
+  font-size: 20px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  margin-bottom: 30px;
+}
+.fourth-sec-text button{
+  padding: 15px 30px;
+  font-size: 17px;
+  background-color: #00B98E;
+  border: 2px solid #00B98E;
+  color: white;
+  border-radius: 50px 0;
+  transition: 0.3s;
+}
+.fourth-sec-text button:hover{
+  background-color: white;
+  color: #00B98E;
+}
+
+/* fifth section code start  */
+
+.section-five{
+  width: 1200px;
+  margin: auto;
+}
+.section-five h2{
+  margin-top: 100px;
+  font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(13, 13, 108);
+}
+.section-five p{
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.sec-five-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.sec-five-img{
+  width: 400px;
+}
+.sec-five-img img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 100px;
+}
+
+/* footer section code start  */
+
+footer{
+  background-color: #00b98ec3;
+  padding: 80px 0;
+}
+.footer-section{
+  width: 1000px;
+  margin: auto;
+}
+.footer-parent{
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+.footer-text p{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: white;
+}
